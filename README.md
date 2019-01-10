@@ -86,27 +86,27 @@ You can't give both people 6 points each though, as the sum exceeds 10.
 
 ### Ideation, Brainstorming, Design:
 
-*Partner 1 (replace this with your name): 0-10*
+*Partner 1 (Sarah): 0-10*
 
-*Partner 2 (replace this with your name): 0-10*
+*Partner 2 (Nick): 0-10*
 
 ### Code creation: 
 
-*Partner 1 (replace this with your name): 0-10*
+*Partner 1 (Sarah): 0-10*
 
-*Partner 2 (replace this with your name): 0-10*
+*Partner 2 (Nick): 0-10*
 
 ### Documentation creation:
 
-*Partner 1 (replace this with your name): 0-10*
+*Partner 1 (Sarah): 0-10*
 
-*Partner 2 (replace this with your name): 0-10*
+*Partner 2 (Nick): 0-10*
 
 ### Teamwork & Participation:
 
-*Partner 1 (replace this with your name): 0-10*
+*Partner 1 (Sarah): 0-10*
 
-*Partner 2 (replace this with your name): 0-10*
+*Partner 2 (Nick): 0-10*
 
 
 ---
