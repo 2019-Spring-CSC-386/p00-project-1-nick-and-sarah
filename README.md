@@ -1,7 +1,7 @@
 # P00: Project 1
 
-**Author(s)**: Sarah Watts and Nick Straub-Deck
-[**Google Document**] (https://docs.google.com/document/d/1fMCTf0CLFllbEqdRbCc9xuTkVDU8cLeUY6zbcaRNZho/edit?usp=sharing)
+**Author(s)**: Sarah Watts and Nick Straub-Deck</br>
+[**Google Document**](https://docs.google.com/document/d/1fMCTf0CLFllbEqdRbCc9xuTkVDU8cLeUY6zbcaRNZho/edit?usp=sharing)
 
 ---
 ## Purpose
