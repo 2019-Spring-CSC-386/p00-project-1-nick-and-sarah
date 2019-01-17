@@ -20,7 +20,7 @@ Outline the product you're creating:
 
 **Sample image**:
 
-![A sample image to show how to add one to a repo](images/example.png "A sample image. This is the text that appears.")
+![An inital diagram of the design](images/diagram0.png "An intial diagram of the design")
 
 **NOTE**: Your initial design plan may not fully reflect your final product,
 as projects evolve over time.
