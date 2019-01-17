@@ -13,8 +13,13 @@ Me and Nick both work for event production, and we have a problem with remeberin
 ## Initial Design Plan
 *You'll complete this section as part of Milestone 1, and update regularly.*
 
-Outline the product you're creating:
-- At this time the hardware devices we will be using is an audrino, and some sensor that we still need to figure out which one to use. 
+Outline the product you're creating:  
+
+### Hardware:  
+- Arudino 
+- Buzzer
+- Button
+
 - We have no code at this time. 
 
 
