@@ -20,15 +20,13 @@ Outline the product you're creating:
 - Buzzer
 - Button
 
+
+![An inital diagram of the design](images/diagram0.png "An intial diagram of the design")
+
 ### Software:  
 - A function that will count to five hours, or count down from five hours, and then once it ends quite buzzing sound. 
 - A loop that will check in the button is pressed
 
-
-
-**Sample image**:
-
-![An inital diagram of the design](images/diagram0.png "An intial diagram of the design")
 
 **NOTE**: Your initial design plan may not fully reflect your final product,
 as projects evolve over time.
@@ -37,6 +35,7 @@ as projects evolve over time.
 *You'll complete this section as part of Milestone 1.*
 
  - ReadME.md: describes the project. 
+ - diagram0.png: first diagram of the project. 
 
 ## Summary
 *You'll complete this part at the end of the project.*
