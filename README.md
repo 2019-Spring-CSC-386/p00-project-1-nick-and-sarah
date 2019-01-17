@@ -28,7 +28,7 @@ as projects evolve over time.
 ## Files
 *You'll complete this section as part of Milestone 1.*
 
-List every file in your repository, and briefly summarize each file's purpose in a sentence.
+ - ReadME.md: describes the project. 
 
 ## Summary
 *You'll complete this part at the end of the project.*
