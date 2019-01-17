@@ -5,22 +5,18 @@
 
 ---
 ## Purpose
-*You'll complete this section as part of Milestone 1.*
 
 Me and Nick both work for event production, and we have a problem with remebering to clock  out after 5 hours. This is because usually events and prepping for them can take a lot of time, so we usually don't notice the clock unless it is about the event time. So our product will have a timer that counts down 5 hours, and then it will buzz or make a noise to indicate that it is time to clock out and take a thirty mintue break.  
 
 
 ## Initial Design Plan
-*You'll complete this section as part of Milestone 1, and update regularly.*
-
-Outline the product you're creating:  
 
 ### Hardware:  
 - Arudino 
 - Buzzer
 - Button
 
-
+**Inital diagram**  
 ![An inital diagram of the design](images/diagram0.png "An intial diagram of the design")
 
 ### Software:  
@@ -28,11 +24,7 @@ Outline the product you're creating:
 - A loop that will check in the button is pressed
 
 
-**NOTE**: Your initial design plan may not fully reflect your final product,
-as projects evolve over time.
-
 ## Files
-*You'll complete this section as part of Milestone 1.*
 
  - ReadME.md: describes the project. 
  - diagram0.png: first diagram of the project. 
