@@ -20,7 +20,10 @@ Outline the product you're creating:
 - Buzzer
 - Button
 
-- We have no code at this time. 
+### Software:  
+- A function that will count to five hours, or count down from five hours, and then once it ends quite buzzing sound. 
+- A loop that will check in the button is pressed
+
 
 
 **Sample image**:
