@@ -7,20 +7,15 @@
 ## Purpose
 *You'll complete this section as part of Milestone 1.*
 
-In no more than one paragraph, describe the problem your product will solve, and how.
+Me and Nick both work for event production, and we have a problem with remebering to clock  out after 5 hours. This is because usually events and prepping for them can take a lot of time, so we usually don't notice the clock unless it is about the event time. So our product will have a timer that counts down 5 hours, and then it will buzz or make a noise to indicate that it is time to clock out and take a thirty mintue break.  
+
 
 ## Initial Design Plan
 *You'll complete this section as part of Milestone 1, and update regularly.*
 
 Outline the product you're creating:
-- List the hardware components you'll be using, and how they interact. 
-  This is an appropriate place for a diagram. An EXCELLENT resource 
-  for creating diagrams is the [Fritzing website](http://fritzing.org/home/ "Fritzing website")
-- List all of the known parts in the code you'll be creating.
-  - Your program must follow good coding standards. 
-  Primarily, I mean your code should include meaningful functions 
-  and appropriate variables, and be formatted and commented well. 
-  Sloppy code with no structure will be penalized 
+- At this time the hardware devices we will be using is an audrino, and some sensor that we still need to figure out which one to use. 
+- We have no code at this time. 
 
 
 **Sample image**:
