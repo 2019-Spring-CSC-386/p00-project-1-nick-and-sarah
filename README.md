@@ -17,7 +17,7 @@ Me and Nick both work for event production, and we have a problem with remeberin
 - Button
 - Real Time Clock
 
-**Inital diagram**  
+**Diagram**  
 ![An inital diagram of the design](images/diagram1.png "An intial diagram of the design")
 
 ### Software:  
