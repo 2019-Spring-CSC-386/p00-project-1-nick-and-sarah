@@ -15,12 +15,13 @@ Me and Nick both work for event production, and we have a problem with remeberin
 - Arudino 
 - Buzzer
 - Button
+- Real Time Clock
 
 **Inital diagram**  
 ![An inital diagram of the design](images/diagram0.png "An intial diagram of the design")
 
 ### Software:  
-- A function that will count to five hours, or count down from five hours, and then once it ends quite buzzing sound. 
+- A function that will count to five hours,and then once it ends quite buzzing sound. 
 - A loop that will check in the button is pressed
 
 
