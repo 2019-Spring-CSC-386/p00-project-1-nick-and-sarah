@@ -9,7 +9,7 @@
 Me and Nick both work for event production, and we have a problem with remebering to clock  out after 5 hours. This is because usually events and prepping for them can take a lot of time, so we usually don't notice the clock unless it is about the event time. So our product will have a timer that counts down 5 hours, and then it will buzz or make a noise to indicate that it is time to clock out and take a thirty mintue break.  
 
 
-## Initial Design Plan
+## Design Plan
 
 ### Hardware:  
 - Arudino 
