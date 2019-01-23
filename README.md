@@ -27,8 +27,11 @@ Me and Nick both work for event production, and we have a problem with remeberin
 
 ## Files
 
- - ReadME.md: describes the project. 
+ - ReadME.md: describes the project.
+### Inside Images Folder 
  - diagram0.png: first diagram of the project. 
+### Inside Ardunio Folder  
+- P1.ino: Ardunio program that runs the system, at the moment it just tests the clock and the button
 
 ## Summary
 *You'll complete this part at the end of the project.*
