@@ -18,7 +18,7 @@ Me and Nick both work for event production, and we have a problem with remeberin
 - Real Time Clock
 
 **Inital diagram**  
-![An inital diagram of the design](images/diagram0.png "An intial diagram of the design")
+![An inital diagram of the design](images/diagram1.png "An intial diagram of the design")
 
 ### Software:  
 - A function that will count to five hours,and then once it ends quite buzzing sound. 
