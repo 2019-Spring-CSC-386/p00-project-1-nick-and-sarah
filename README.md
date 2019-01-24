@@ -1,5 +1,11 @@
 # P00: Project 1
-
+```diff
+- Nice use of your daily life to brainstorm a useful system. I can see lots of ways you two can expand upon it too (10m break every hour; 30m break for lunch, etc.)
+- Remove all instructions and sample text. This should be your writing ONLY.
+- How do you turn this system off? Say I work for 3 hours, then go to bed. I don't want woke up in 2 hours because I can't turn this thing off... think about full lifecycle of product, plus fringe cases.
+- No references???
+- Nice diagram, but use right parts for RTC (there's better ones in Fritzing). 
+```
 **Authors**: Sarah Watts and Nick Straub-Deck</br>
 [**Google Document**](https://docs.google.com/document/d/1fMCTf0CLFllbEqdRbCc9xuTkVDU8cLeUY6zbcaRNZho/edit?usp=sharing)
 
