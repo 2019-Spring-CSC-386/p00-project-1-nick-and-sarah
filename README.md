@@ -41,8 +41,8 @@ Me and Nick both work for event production, and we have a problem with remeberin
 
 
 ## References . 
-- http://docs.macetech.com/doku.php/chronodot_v2.0
-- https://www.arduino.cc/en/tutorial/button
+- http://docs.macetech.com/doku.php/chronodot_v2.0 : Used to get the clock to work
+- https://www.arduino.cc/en/tutorial/button: Used to get the button to work.
 
 
 
@@ -80,9 +80,3 @@ You can't give both people 6 points each though, as the sum exceeds 10.
 
 
 ---
-**A Note from Scott to You**
-
-While I expect this project to have issues, one
-thing to keep in mind is HAVE FUN with it! Create a product that
-expresses your personal interests. Break up the writing so it’s not so burdensome.
-We will have a live demo sessions at the end of the project to celebrate your accomplishments.
