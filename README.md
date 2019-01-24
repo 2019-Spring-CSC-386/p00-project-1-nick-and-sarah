@@ -40,7 +40,11 @@ Me and Nick both work for event production, and we have a problem with remeberin
 ## Reflection
 
 
-## References
+## References . 
+- http://docs.macetech.com/doku.php/chronodot_v2.0
+- https://www.arduino.cc/en/tutorial/button
+
+
 
 
 ## Final Self-Evaluations
