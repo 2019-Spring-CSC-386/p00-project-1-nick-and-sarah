@@ -43,6 +43,9 @@ Me and Nick both work for event production, and we have a problem with remeberin
 ## References . 
 - http://docs.macetech.com/doku.php/chronodot_v2.0 : Used to get the clock to work
 - https://www.arduino.cc/en/tutorial/button: Used to get the button to work.
+- https://www.arduino.cc/reference/en/#functions: Used to remember variable names on boolean functions.  
+- http://forum.arduino.cc/index.php?topic=43582.0: Used to remember the syntax for an if statement with an or
+- https://forum.arduino.cc/index.php?topic=401274.0: Used to remember the syntax of true.
 
 
 
