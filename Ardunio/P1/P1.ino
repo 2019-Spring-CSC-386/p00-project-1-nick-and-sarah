@@ -35,32 +35,38 @@ boolean Timer() {
   Wire.write((byte)0); // start at register 0
   Wire.endTransmission();
   Wire.requestFrom(0x68, 3); // request three bytes (seconds, minutes, hours)
-  int currentSeconds = 0;
+  int currentMinutes = 0;
   int currentHours = 0;
-  int stopTime;
-  int seconds = 0;
+  int stopHours;
+  int stopMinutes;
+  int minutes = 0;
   int hours = 0;
   for(int i; i < 1; i++)
   { 
-    seconds = Wire.read(); // get seconds
+    minutes = Wire.read(); // get seconds
     hours = Wire.read();   // get hours
-    currentSeconds = (((seconds & 0b11110000)>>4)*10 + (seconds & 0b00001111)); // convert BCD to decimal
+    currentMinutes =  (((minutes & 0b11110000)>>4)*10 + (minutes & 0b00001111)); // convert BCD to decimal // convert BCD to decimal
     currentHours = (((hours & 0b00100000)>>5)*20 + ((hours & 0b00010000)>>4)*10 + (hours & 0b00001111)); // convert BCD to decimal (assume 24 hour mode)
-    stopTime = currentSeconds + 30;
+    stopHours = currentMinutes + 1;
+    stopMinutes = currentMinutes;
     Serial.println("This is current Hours: "); Serial.println(currentHours); 
-    Serial.println("This is current seconds: "); Serial.println(currentSeconds);
-    Serial.println("This is stopTime: "); Serial.println(stopTime); 
+    Serial.println("This is current minutes: "); Serial.println(currentMinutes);
+    Serial.println("This is stopHours: "); Serial.println(stopHours); 
+    Serial.println("This is stopMinutes: ");Serial.println(stopMinutes);
+    
   }
-  while (currentSeconds < stopTime){
+  while (currentMinutes < stopMinutes){
     buttonState = digitalRead(inputPin);
     while (buttonState == LOW) {
       buttonState = digitalRead(inputPin);
-      seconds = Wire.read();
+      minutes = Wire.read();
       hours = Wire.read();
-      currentSeconds = (((seconds & 0b11110000)>>4)*10 + (seconds & 0b00001111)); 
+      currentMinutes =  (((minutes & 0b11110000)>>4)*10 + (minutes & 0b00001111)); // convert BCD to decimal;
       currentHours = (((hours & 0b00100000)>>5)*20 + ((hours & 0b00010000)>>4)*10 + (hours & 0b00001111)); 
-      if (currentSeconds == stopTime || currentSeconds > stopTime); //Trying to figure out the syntax for an or http://forum.arduino.cc/index.php?topic=43582.0
-          return true; //Didn't realize true was lower case syntax, man: https://forum.arduino.cc/index.php?topic=401274.0
+      if(currentHours == stopHours && currentMinutes == stopMinutes);
+          return true;
+      if(currentHours == stopHours && currentMinutes > stopMinutes);
+          return true;
       if (buttonState == HIGH);
           return false;
       
@@ -91,6 +97,7 @@ void loop() {
 // }
 //}
    timerState = Timer();
+   
 }
 
  
