@@ -51,30 +51,44 @@ bool Timer() {
   DateTime now = RTC.now();
   //Setting up variables
   int currentMinutes = 0; 
-  int currentHours = 0; 
-  int stopHours = 0;
   int stopMinutes = 0;
+  
+
+// Not needed for demo
+ // int stopHours = 0;
+ //int currentHours = 0;  
   
 
   // Checking current time
   currentMinutes = now.minute();
-  currentHours = now.hour();
-  stopHours = currentHours + 5;
-  stopMinutes = now.minute();
-  if(stopHours > 24) {
-     Serial.println("INSIDE IF");
-     stopHours = stopHours - 24;
-  }
+  stopMinutes = currentMinutes + 1;
+  
+
+//Not needed for demo
+//  currentHours = now.minute();
+ // stopHours = currentHours + 1;
+
+
+// Not needed for demo
+  //if(stopHours > 24) {
+   //  Serial.println("INSIDE IF");
+    // stopHours = stopHours - 24;
+ // }
   
 
   //Print statements
   Serial.print("currentMinutes "); Serial.println(currentMinutes);
-  Serial.print("currentHours "); Serial.println(currentHours);
-  Serial.print("stopHours" ); Serial.println(stopHours);
   Serial.print("stopMinutes") ; Serial.println(stopMinutes);
 
+ 
+  
+
+// Not needed for demo
+ // Serial.print("stopHours " ); Serial.println(stopHours);
+ // Serial.print("stopMinutes") ; Serial.println(stopMinutes);
+
   // Creating loop
-  if((stopHours != currentHours)) {
+  if((stopMinutes != currentMinutes)) {
     
     Serial.println("Starting if");
     buttonState = digitalRead(inputPin);
@@ -86,23 +100,31 @@ bool Timer() {
           buttonState = digitalRead(inputPin);
           currentMinutes = now.minute();
           int seconds = now.second();
-          currentHours = now.hour();
+
+          //Not needed for demo
+          //currentHours = now.minute();
 
           //Adding print statements for testing
-          Serial.print("Updated minutes"); Serial.print(currentMinutes);Serial.print(".");Serial.println(seconds); 
-          Serial.print("Updated hours"); Serial.println(currentHours);
+          Serial.print("Updated minutes"); Serial.println(currentMinutes);Serial.print(".");Serial.println(seconds); 
+          //Serial.print("Updated hours"); Serial.println(currentHours);
 
+          //Serial.print("stopHours");Serial.println(stopHours);
+          Serial.print("stopMinutes");Serial.println(stopMinutes);
   
           //If statements
-          if(currentHours == stopHours && currentMinutes == stopMinutes){
+          if(currentMinutes == stopMinutes){
+              Serial.println("START IF");
               return true;
+              
               }
-          if (currentHours == stopHours && stopMinutes > currentMinutes){
+          if (stopMinutes < currentMinutes){
+              Serial.println("MIDDLE IF");
               return true;
               }
 
           if(buttonState == HIGH) {
-            return false; 
+              Serial.println("END IF");
+              return false; 
           }
 
         delay (1000);
@@ -112,8 +134,22 @@ bool Timer() {
   }
 }
 
+
 void loop() {
   // Get the current time
-  Timer();
+  buttonState = digitalRead(inputPin);
+  if (buttonState == HIGH) {
+    Serial.println("BUTTON PUSHED");
+    timerState = Timer();
+    Serial.print("timerState"); Serial.println(timerState);
+    if(timerState == 1) {
+      Serial.println("FUNCTION WORKED");
+    }
+    if(timerState == 0) {
+      Serial.println("BUTTON WAS PRESSED");
+    }
+    
+  }
+  
   
 }
