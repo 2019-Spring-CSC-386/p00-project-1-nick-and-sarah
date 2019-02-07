@@ -36,6 +36,10 @@ Me and Nick both work for event production, and we have a problem with remeberin
 
 ## Errors and Constraints
 
+### Hardware Issues . 
+- The button is very loose, and sometimes when you press it for a longer amount of time, it will count it as two presses. We think this can be solved by just using a better button.   
+
+
 
 ## Reflection
 
@@ -46,7 +50,8 @@ Me and Nick both work for event production, and we have a problem with remeberin
 - https://www.arduino.cc/reference/en/#functions: Used to remember variable names on boolean functions.  
 - http://forum.arduino.cc/index.php?topic=43582.0: Used to remember the syntax for an if statement with an or
 - https://forum.arduino.cc/index.php?topic=401274.0: Used to remember the syntax of true.
-
+- https://www.instructables.com/id/Getting-started-with-Arduino-Y%C3%BAn-and-ChronoDot-v2/: Used the library to simpifly the code.  
+- https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/: Used to work on the buzzer. 
 
 
 
