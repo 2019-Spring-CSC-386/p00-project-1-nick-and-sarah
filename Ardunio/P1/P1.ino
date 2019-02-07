@@ -29,55 +29,56 @@ void setup() {
 }
 
 boolean Timer() {
+  Serial.println("I'm in the timer function");
   ///Things go in here
   //Also found at the following link:  http://docs.macetech.com/doku.php/chronodot_v2.0
   Wire.beginTransmission(0x68); // 0x68 is DS3231 device address
   Wire.write((byte)0); // start at register 0
   Wire.endTransmission();
   Wire.requestFrom(0x68, 3); // request three bytes (seconds, minutes, hours)
+  Serial.println("inital varaibles.");
   int currentMinutes = 0;
   int currentHours = 0;
   int stopHours;
   int stopMinutes;
   int minutes = 0;
   int hours = 0;
-  for(int i; i < 1; i++)
-  { 
-    minutes = Wire.read(); // get seconds
-    hours = Wire.read();   // get hours
-    currentMinutes =  (((minutes & 0b11110000)>>4)*10 + (minutes & 0b00001111)); // convert BCD to decimal // convert BCD to decimal
-    currentHours = (((hours & 0b00100000)>>5)*20 + ((hours & 0b00010000)>>4)*10 + (hours & 0b00001111)); // convert BCD to decimal (assume 24 hour mode)
-    stopHours = currentMinutes + 1;
-    stopMinutes = currentMinutes;
-    Serial.println("This is current Hours: "); Serial.println(currentHours); 
-    Serial.println("This is current minutes: "); Serial.println(currentMinutes);
-    Serial.println("This is stopHours: "); Serial.println(stopHours); 
-    Serial.println("This is stopMinutes: ");Serial.println(stopMinutes);
+  
+  minutes = Wire.read(); // get seconds
+  hours = Wire.read();   // get hours
+  currentMinutes =  (((minutes & 0b11110000)>>4)*10 + (minutes & 0b00001111)); // convert BCD to decimal // convert BCD to decimal
+  currentHours = (((hours & 0b00100000)>>5)*20 + ((hours & 0b00010000)>>4)*10 + (hours & 0b00001111)); // convert BCD to decimal (assume 24 hour mode)
+  stopHours = currentMinutes + 5;
+  stopMinutes = currentMinutes;
+  Serial.println("This is current Hours: "); Serial.println(currentHours); 
+  Serial.println("This is current minutes: "); Serial.println(currentMinutes);
+  Serial.println("This is stopHours: "); Serial.println(stopHours); 
+  Serial.println("This is stopMinutes: ");Serial.println(stopMinutes);
     
-  }
-  while (currentMinutes < stopMinutes){
+  Serial.println("Before while loop");
+  while (currentMinutes < stopHours){
+    Serial.println("In while loop.");
     buttonState = digitalRead(inputPin);
-    while (buttonState == LOW) {
+    Serial.println(buttonState);
+   while (buttonState == LOW) {
+    Serial.println("In other while loop");
       buttonState = digitalRead(inputPin);
       minutes = Wire.read();
       hours = Wire.read();
       currentMinutes =  (((minutes & 0b11110000)>>4)*10 + (minutes & 0b00001111)); // convert BCD to decimal;
       currentHours = (((hours & 0b00100000)>>5)*20 + ((hours & 0b00010000)>>4)*10 + (hours & 0b00001111)); 
+      Serial.println("This is currentHours on while loop: "); Serial.println(currentHours);
+      Serial.println("This is current Minutes on while loop: "); Serial.println(currentMinutes);
       if(currentHours == stopHours && currentMinutes == stopMinutes);
-          return true;
+           return true;
       if(currentHours == stopHours && currentMinutes > stopMinutes);
           return true;
       if (buttonState == HIGH);
-          return false;
+         return false;
       
     }
  
-        
   }
-  
-  
- 
-  delay(1000);
 }
 
 
@@ -95,8 +96,10 @@ void loop() {
 // else if (buttonState == LOW){
     // noTone(8);
 // }
-//}
-   timerState = Timer();
+///
+
+    Timer();
+ 
    
 }
 
