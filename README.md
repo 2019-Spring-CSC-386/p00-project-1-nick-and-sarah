@@ -32,12 +32,25 @@ Me and Nick both work for event production, and we have a problem with remeberin
  - diagram0.png: first diagram of the project. 
 ### Inside Ardunio Folder  
 - P1.ino: Ardunio program that runs the system, at the moment it just tests the clock and the button
-## Instructions
+## Instructions  
+In order to use this system you must go thgently and through the following steps:  
+1. Connect the system to a power source.   
+2. Turn make sure the code is on the Aurdino.   
+3. Press the button when you want the code to start, make sure to press it not for long amount of time.  
+4. If you want the program to stop at anytime, just press the button again. Otherwise, wait 5 hours
+5. Once the buzzing begins, press the button to stop it. 
+6. Press the button again to start the time over. 
+
 
 ## Errors and Constraints
 
-### Hardware Issues . 
+### Hardware Issues 
 - The button is very loose, and sometimes when you press it for a longer amount of time, it will count it as two presses. We think this can be solved by just using a better button.   
+
+### Software Issue: 
+- Although, we did code a five hour verision there was not enough time to test to fully, so we cannot say that it will 100% work. We believe that more time to test that is needed.
+
+
 
 
 
