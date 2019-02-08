@@ -6,13 +6,13 @@
 ---
 ## Purpose
 
-Me and Nick both work for event production, and we have a problem with remebering to clock  out after 5 hours. This is because usually events and prepping for them can take a lot of time, so we usually don't notice the clock unless it is about the event time. So our product will have a timer that counts down 5 hours, and then it will buzz or make a noise to indicate that it is time to clock out and take a thirty mintue break.  
+Me and Nick both work for event production, and we have a problem with remembering to clock out after 5 hours. This is because usually events and prepping for them can take a lot of time, so we usually don't notice the clock unless it is about the event time. So our product will have a timer that counts down 5 hours, and then it will buzz or make a noise to indicate that it is time to clock out and take a thirty mintue break.  
 
 
 ## Design Plan
 
 ### Hardware:  
-- Arudino 
+- Arduino 
 - Buzzer
 - Button
 - Real Time Clock
@@ -21,8 +21,8 @@ Me and Nick both work for event production, and we have a problem with remeberin
 ![An inital diagram of the design](images/diagram1.png "An intial diagram of the design")
 
 ### Software:  
-- A function that will count to five hours,and then once it ends quite buzzing sound. 
-- A loop that will check in the button is pressed
+- A function that will count to five hours,and then once it ends creates a buzzing sound. 
+- A loop that will check if the button is pressed
 
 
 ## Files
@@ -46,10 +46,10 @@ Whatever computer is running this code must have the following library:
 - RTClib (Found at this link :https://github.com/adafruit/RTClib)
 
 ## Instructions  
-In order to use this system you must go thgently and through the following steps:  
+In order to use this system you must go through the following steps:  
 1. Connect the system to a power source.   
-2. Turn make sure the code is on the Aurdino.   
-3. Press the button when you want the code to start, make sure to press it not for long amount of time.  
+2. Make sure the code is on the Aurdino.   
+3. Press the button when you want the code to start (not for long amount of time).  
 4. If you want the program to stop at anytime, just press the button again. Otherwise, wait 5 hours
 5. Once the buzzing begins, press the button to stop it. 
 6. Press the button again to start the time over. 
@@ -57,10 +57,10 @@ In order to use this system you must go thgently and through the following steps
 ## Errors and Constraints
 
 ### Hardware Issues 
-- The button is very loose, and sometimes when you press it for a longer amount of time, it will count it as two presses. We think this can be solved by just using a better button.   
+- The button is very loose, and sometimes when you press it for a longer amount of time, it will count it as two presses. We think this can be solved by just using a better button. It also sometimes dosen't count as a press at all.
 
 ### Software Issue: 
-- Although, we did code a five hour verision there was not enough time to test to fully, so we cannot say that it will 100% work. We believe that more time to test that is needed.
+- Although, we did code a five hour version there was not enough time to test it fully, so we cannot say that it will 100% work. We believe that more time to test that is needed.
 
 ## Reflection  
 We think that this project went really well. We knew from coming in that it would mainly rely on the coding. It was hard at times, but once we found the right library we figured it out pretty easily. We think that we picked a good project, and scoped it pretty well to make sure that we had it finished during the time that we had.
@@ -86,27 +86,27 @@ You can't give both people 6 points each though, as the sum exceeds 10.
 
 ### Ideation, Brainstorming, Design:
 
-*Partner 1 (Sarah): 0-10*
+*Partner 1 (Sarah): 4
 
-*Partner 2 (Nick): 0-10*
+*Partner 2 (Nick): 6
 
 ### Code creation: 
 
-*Partner 1 (Sarah): 0-10*
+*Partner 1 (Sarah): 7
 
-*Partner 2 (Nick): 0-10*
+*Partner 2 (Nick): 3
 
 ### Documentation creation:
 
-*Partner 1 (Sarah): 0-10*
+*Partner 1 (Sarah): 6
 
-*Partner 2 (Nick): 0-10*
+*Partner 2 (Nick): 4
 
 ### Teamwork & Participation:
 
-*Partner 1 (Sarah): 0-10*
+*Partner 1 (Sarah): 4
 
-*Partner 2 (Nick): 0-10*
+*Partner 2 (Nick): 6
 
 
 ---
