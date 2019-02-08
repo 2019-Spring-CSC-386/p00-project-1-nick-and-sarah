@@ -41,6 +41,9 @@ In order to use this system you must go thgently and through the following steps
 5. Once the buzzing begins, press the button to stop it. 
 6. Press the button again to start the time over. 
 
+### System Requirements:  
+Whatever computer is running this code must have the following library:  
+- RTClib (ttps://www.instructables.com/id/Getting-started-with-Arduino-Y%C3%BAn-and-ChronoDot-v2/)
 
 ## Errors and Constraints
 
