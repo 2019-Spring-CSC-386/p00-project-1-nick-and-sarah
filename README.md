@@ -32,6 +32,11 @@ Me and Nick both work for event production, and we have a problem with remeberin
  - diagram0.png: first diagram of the project. 
 ### Inside Ardunio Folder  
 - P1.ino: Ardunio program that runs the system, at the moment it just tests the clock and the button
+
+## System Requirements:  
+Whatever computer is running this code must have the following library:  
+- RTClib (Found at this link :https://github.com/adafruit/RTClib)
+
 ## Instructions  
 In order to use this system you must go thgently and through the following steps:  
 1. Connect the system to a power source.   
@@ -41,9 +46,7 @@ In order to use this system you must go thgently and through the following steps
 5. Once the buzzing begins, press the button to stop it. 
 6. Press the button again to start the time over. 
 
-### System Requirements:  
-Whatever computer is running this code must have the following library:  
-- RTClib (Found at this link :https://github.com/adafruit/RTClib)
+
 
 ## Errors and Constraints
 
