@@ -43,7 +43,7 @@ In order to use this system you must go thgently and through the following steps
 
 ### System Requirements:  
 Whatever computer is running this code must have the following library:  
-- RTClib (ttps://www.instructables.com/id/Getting-started-with-Arduino-Y%C3%BAn-and-ChronoDot-v2/)
+- RTClib (Found at this link :https://github.com/adafruit/RTClib)
 
 ## Errors and Constraints
 
@@ -68,6 +68,7 @@ Whatever computer is running this code must have the following library:
 - https://forum.arduino.cc/index.php?topic=401274.0: Used to remember the syntax of true.
 - https://www.instructables.com/id/Getting-started-with-Arduino-Y%C3%BAn-and-ChronoDot-v2/: Used the library to simpifly the code.  
 - https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/: Used to work on the buzzer. 
+- https://github.com/adafruit/RTClib: link for library
 
 
 
