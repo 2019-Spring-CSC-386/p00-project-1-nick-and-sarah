@@ -1,0 +1,42 @@
+git:
+
+clone: Brings all code from Github into local machine
+
+fetch: get all repo info from github
+
+branch: create a new branch or check my current branch
+git branch <newbranchname>
+git branch
+
+git checkout: switch branches on my local
+
+git add: Add a file to the commit history
+
+git commit: Add tracking of  changes to all the file added above
+git commit -m "witty message"
+
+git push: send changes to Github. Sends only the added files and the commits. Sends it to current branch (check branch first!)
+
+git merge: pulls a specified branch into current branch.
+git merge fakemaster - brings fakemaster branch into the branch you're currently on
+
+Workflow:
+git clone
+git branch <new>
+git checkout <new>
+<<do work>>
+git add <newfiles>
+git commit -m "witty messages"
+<<changes are complete>>
+git checkout master
+git pull origin master
+git checkout <new>
+git merge master
+<<resolve any conflicts between <<<< ====== >>>>> >>
+git add <any changed files>
+git commit -m "fixed merge conflicts"
+git push origin <new>
+<< go to github, issue pull request, tell partner to review >>
+
+
+
